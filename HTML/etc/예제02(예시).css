@@ -1,0 +1,79 @@
+/* 기본 설정 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* 헤더 */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  margin-top: 10px;
+}
+header li {
+  display: inline;
+  margin: 0 15px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+/* 메인 레이아웃 */
+.container {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+.content {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.sidebar {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+  border-radius: 8px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+.sidebar a:hover {
+  color: #4CAF50;
+}
+
+/* 버튼 스타일 */
+.btn {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn:hover {
+  background: #45a049;
+}
+
+/* 푸터 */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}

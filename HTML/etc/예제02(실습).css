@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif
+}
+#헤더 {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+}
+#헤더 > ul > li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+#헤더 > ul > li > strong > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#메인 {
+    overflow: hidden;
+    margin: 20px;
+    box-sizing: border-box;
+}
+#섹션 {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+#섹션 > button {
+    color: #FFFFFF;
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#섹션 > button:hover {
+    background-color: #45a049;
+}
+#사이드바 {
+    float: right;
+    text-align: left;
+    background-color: #eee;
+    width: 29%;
+    box-sizing: border-box;
+    margin-left: 1%;
+    border-radius: 10px;
+    padding: 20px;
+}
+#사이드바 > ul {
+    list-style-position: inside;
+}
+#사이드바 > ul > li > a {
+    text-decoration: none;
+    color: #000;
+}
+#푸터 {
+    color: #FFFFFF;
+    background-color: #333;
+    padding: 20px;
+}

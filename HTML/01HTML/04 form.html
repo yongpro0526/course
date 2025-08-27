@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>사용자에게 받을 데이터를 서버로 전송할때 form 태그를 사용</h3>
+    <form action="#">
+        아이디: <input type="text"><br>
+        비밀번호: <input type="password"><br>
+        이메일: <input type="email"><br>
+        가격: <input type="number"><br>
+        색상: <input type="color"><br>
+        날짜: <input type="date"><br>
+        시간: <input type="datetime-local"><br>
+
+        <!-- radio 또는 checkbox는 name속성으로 하나의 그룹으로 만들어야 함 -->
+        <!-- name은 서버에서 식별하는 이름 -->
+        전공: 
+        <input type="radio" name="major">경영학과
+        <input type="radio" name="major">컴퓨터공학과
+        <input type="radio" name="major">수학과
+        <input type="radio" name="major">영문학과
+        <br>
+
+        취미:
+        <input type="checkbox" name="hobby">축구
+        <input type="checkbox" name="hobby">게임
+        <input type="checkbox" name="hobby">운동
+        <input type="checkbox" name="hobby">취침
+        <br>
+
+        통신사
+        <select name="" id="">
+            <option>선택</option>
+            <option>SKT</option>
+            <option>KT</option>
+            <option>LGU+</option>
+        </select>
+        <br>
+        
+        하고싶은말!
+        <textarea rows="5" cols="30"></textarea>
+        <br>
+
+        <!-- value는 태그가 미리 가지는 값을 나타냄 -->
+        <input type="reset" value="RESET">
+        <input type="button" value="아무 기능 없는 버튼">
+        <!-- submit은 데이터를 서버로 전송하는 버튼, form태그의 action으로 전송함. -->
+        
+
+    </form>
+    
+</body>
+</html>

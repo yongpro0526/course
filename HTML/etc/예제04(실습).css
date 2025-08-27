@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+#header {
+    background-image: url('https://picsum.photos/1200/800');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+}
+#header > h1 {
+    font-size: 3rem;
+}
+#header > p {
+    padding: 10px;
+}
+#header > button {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: 100px;
+}
+#header > button:hover {
+    background-color: #45a049;
+}
+#nav {
+    width: 100%;
+}
+#main > nav > ul {
+    display: flex;
+    margin: 40px 20px;
+}
+#main > nav > ul > li {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 10px;
+    flex: 1;
+}
+.icon1, .icon2, .icon3 {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.icon1 {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828843.png');
+}
+.icon2 {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828778.png');
+}
+.icon3 {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828817.png');
+}
+.text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#article {
+    background-color: #eee;
+    padding: 70px 30px;
+}
+#article > h2 {
+    margin-bottom: 30px;
+}
+#section {
+    padding: 70px;
+}
+#section > input, textarea, button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    padding: 10px;
+    
+}
+#section > input, textarea {
+    text-align: left;
+    margin-bottom: 20px;
+}
+#section > textarea {
+    height: 100px;
+}
+#section > button {
+    background-color: #4caf50;
+    color: #fff;
+}
+#section > button:hover {
+    background-color: #45a049;
+}
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}

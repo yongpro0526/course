@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p {
+            border: 1px solid #777;
+            text-align: left; /* left가 기본값, center, right 사용 가능*/
+            letter-spacing: -2px; /* 자간 */
+        }
+
+            .box > img {vertical-align: top;}
+            /* box는 p이기 때문에 img로 설정해줘야, img가 가운데로 움직임. 즉, 움직일 대상에대해 정확히 설정해줘야 함. */
+
+            .box2 {
+                border: 1px solid #777;
+                height: 100px;
+                line-height: 100px; /* 한 줄일때, 줄간격과 높이가 동일하며 수직정렬 됨. */
+                text-align: center;
+            }
+
+    </style>
+
+</head>
+<body>
+    
+    <p>hello world!</p>
+
+    <a href="#" 
+       style="text-decoration: none;">hello</a>
+
+    <p class="box">
+        vertical align
+        <img src="img/css3.png" alt="css3">
+    </p>
+
+    <div class="box2">
+        고생하셨소!
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* 기본 설정 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh; /* 화면 꽉 채우기 */
+  background-image: url('https://picsum.photos/1200/800');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 3rem;
+}
+.hero .btn {
+  margin-top: 20px;
+  background: #4CAF50;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.hero .btn:hover {
+  background: #45a049;
+}
+.hero .icon {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/545/545682.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+  gap: 20px;
+  background: #fff;
+}
+.card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  min-height: 250px;
+}
+.card .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service1 { background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828843.png'); }
+.service2 { background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828778.png'); }
+.service3 { background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828817.png'); }
+
+/* About Section */
+.about {
+  padding: 80px 40px;
+  text-align: center;
+  background: #eee;
+}
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 40px;
+  background: #fff;
+  text-align: center;
+}
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+.contact button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}

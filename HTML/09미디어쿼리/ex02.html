@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .box {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #777;
+            overflow: hidden;
+        }
+        .box > li {
+            border: 1px solid #777;
+            box-sizing: border-box  ;
+        }
+        /* 공통적인 부분은 바깥쪽에서 처리
+        이런 반응형 디자인은 주로 너비를 %로 처리 */
+
+        @media(min-width: 1240px) {
+            .box > li {
+                float: left;
+                width: 16.6666%;
+            }
+        }
+
+        @media(max-width: 1239px) and (min-width:767px) {
+            .box > li {
+                float: left;
+                width: 25%;
+            }
+        }
+
+        @media(max-width: 766px) {
+            .box > li {
+                float: left;
+                width: 50%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <ul class="box">
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+    </ul>
+    
+</body>
+</html>

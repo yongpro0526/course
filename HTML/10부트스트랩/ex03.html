@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css파일 링크 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jquery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- js파일 링크 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 사용자 정의디자인 -->
+    <link rel="stylesheet" href="css/ex03.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+
+                <!-- 모바일 사이즈에서 드롭다운 메뉴 -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand my-navbar" href="#">
+                    <img src="img/logo.svg" alt="로고" width="30px">
+                </a>
+                </div>
+
+                <!-- 메뉴 -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="#">홈으로</a></li>
+                        <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">메뉴1</a>
+                        <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">메뉴2</a></li>
+                        <li><a href="#">메뉴3</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            검색
+                        </button>
+                        </div>
+                    </div>
+                    </form>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인</a>
+                            <span class=""></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">로그인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                <img src="img/slide01.jpg" alt="슬라이드1">
+                </div>
+
+                <div class="item">
+                <img src="img/slide02.jpg" alt="슬라이드2">
+                </div>
+
+                <div class="item">
+                <img src="img/slide03.jpg" alt="슬라이드3">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </article>
+    
+    <section>
+        <div class="container">
+            <h3>오늘의 핫 아이템</h3>
+            <ul class="row">
+                <li class="col-lg-2 col-sm-3 col-xs-6 blog-style">
+                    <div class="blog-inner">
+                        <img src="img/blog1.jpg" alt="블로그1">
+                        <div class="blog-content">
+                            <p>라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</p>
+                            <div class="blog-price">
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                                <strong>99,000</strong>
+                            </div>
+                        </div>
+                        <!-- 호버영역 -->
+                         <div class="blog-hover">
+                            <a href="#">라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</a>
+                         </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="container">
+        <h3>상품그리드</h3>
+        <ul class="row">
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod1.jpg" alt="프로드1">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod2.jpg" alt="프로드2">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod3.jpg" alt="프로드3">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>   
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod4.jpg" alt="프로드4">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod5.jpg" alt="프로드5">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod6.jpg" alt="프로드6">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod7.jpg" alt="프로드7">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod8.jpg" alt="프로드8">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6 col-xs-12 blog-style-2">
+                <div class="blog-inner-2">
+                    <img src="img/prod9.jpg" alt="프로드9">
+                    <div class="blog-content-2">
+                        <div class="blog-name-2">
+                            <p>나이키 에어맥스
+                                <i class="glyphicon glyphicon-heart" style="color: red;"></i>
+                                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+                            </p>
+                            <p>MEN 신발 라이프스타일</p>
+                            <p>8칼라</p>
+                        </div>
+                        <strong class="blog-price-2">199,900원</strong>
+                    </div>
+                    <!-- 호버 영역 -->
+                    <div class="blog-hover-2">
+                        <ul>
+                            <li><img src="img/color1.jpg" alt="칼라1"></li>
+                            <li><img src="img/color2.jpg" alt="칼라2"></li>
+                            <li><img src="img/color3.jpg" alt="칼라3"></li>
+                            <li><img src="img/color4.jpg" alt="칼라4"></li>
+                            <li><img src="img/color5.jpg" alt="칼라5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+</body>
+</html>

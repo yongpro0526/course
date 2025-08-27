@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .box .item {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            }
+        .container2 {
+            display: flex;
+            height: 200px;
+            flex-wrap: wrap;
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+        }
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            height: 200px;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3>justify content (주축 정렬 - 축은 direction에 의해 결정됨)</h3>
+    <div class="container box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <hr>
+
+    <h3>align-item</h3>
+    <div class="container2 box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <hr>
+
+    <h3>align-content (반대축정렬-여러줄에 대한)</h3>
+    <div class="container3 box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+</body>
+</html>

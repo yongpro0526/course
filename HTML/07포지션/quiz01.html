@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            background-image: url(images/bg.png);
+        }
+        #탑 {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 50px;
+            right: 50px;
+            text-align: center;
+            line-height: 50px;
+            z-index: 40;
+        }
+        #헤더 {
+            width: 100%;
+            text-align: center;
+        }
+        #헤더 > img {
+            margin: 20px;
+        }
+        .메뉴 {
+            background-color: #000;
+        }
+        .메뉴 > li {
+            display: inline;
+        }
+        .메뉴 > li > a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            padding: 20px;
+        }
+        .메뉴 > li > a:hover {
+            background-color: #4d4d4d;
+        }
+        .아이템 {
+            background-color: #fff;
+            padding: 40px;
+            overflow: hidden;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .아이템 > li {
+            width: 25%;
+            float: left;
+        }
+        .스티키 {
+            top: 0;
+            position: sticky;
+            background-color: #fff;
+            text-align: center;
+            z-index: 20;
+        }
+        .스티키 > ul {
+            display: inline;
+        }
+        .스티키 > ul > li {
+            display: inline-block;
+            padding: 10px;
+        }
+        #섹션 {
+            text-align: center;
+            z-index: 5;
+        }
+        #섹션 > div {
+            width: 700px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .왼쪽 {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: -220px;
+        }
+        .오른쪽 {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            right: -220px;
+        }
+        .사이드 {
+            display: block;
+        }
+        .텍스트 {
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="탑">
+        <a href="#">TOP</a>
+    </div>
+    <header id="헤더">
+        <img src="images/logo.jpg" alt="로고">
+        <ul class="메뉴">
+            <li>
+                <a href="#">
+                    <strong>메뉴1</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <strong>메뉴1</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <strong>메뉴1</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <strong>메뉴1</strong>
+                </a>
+            </li>
+        </ul>
+        <div style="width: 100%; background-color: #fff;">
+            <ul class="아이템">
+                <li>
+                    <div>
+                        <img src="images/item01.png" alt="아이템1">
+                        <p>iPhone(디스플레이 or 플롯)</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/item02.png" alt="아이템2">
+                        <p>iPod</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/item03.png" alt="아이템3">
+                        <p>iPad</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/item04.png" alt="아이템4">
+                        <p>iMac</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="스티키">
+        <ul>
+            <li>
+                <p>아이콘</p>
+            </li>
+            <li>
+                <p>아이콘</p>
+            </li>
+            <li>
+                <p>아이콘</p>
+            </li>
+            <li>
+                <p>이거는 스티키</p>
+            </li>
+        </ul>
+    </div>
+    <section id="섹션">
+        <div>
+            <img src="images/ipad.jpg" alt="아이패드">
+            <div class="왼쪽">
+                <img class="사이드" src="images/side01.png" alt="사이드01" style="margin-bottom: 25px;">
+                <img class="사이드" src="images/side02.png" alt="사이드02">
+                <p class="텍스트">이거는 포지션</p>
+            </div>
+            <div class="오른쪽">
+                <img class="사이드" src="images/side03.png" alt="사이드03" style="margin-bottom: 25px;">
+                <img class="사이드" src="images/side04.png" alt="사이드04">
+                <p class="텍스트">이거는 포지션</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

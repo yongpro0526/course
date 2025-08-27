@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        header {
+            text-align: center;
+            background-color: black;
+        }
+
+        .메뉴 > li {
+            display: inline-block;
+        }
+
+        .메뉴 > li > a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            width: 70px;
+            height: 50px;
+            text-align: center;
+            line-height: 53px;
+            box-sizing: border-box;
+        }
+
+        .메뉴 > li > a:hover {
+            border-bottom: 3px solid white;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .제목 {
+            width: 1000px;
+            margin: 0 auto 5px;
+        }
+
+        .내용 {
+            border: 1px solid #777;
+            width: 1000px;
+            height: 70px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            line-height: 28px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <ul class="메뉴">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </header>
+
+    <article>
+        <img src="img/쿠팡.jpg" alt="쿠팡">
+    </article>
+
+    <section style="margin-top: 30px;">
+        <p class="제목">오늘의 발견</p>
+        <p class="내용">이 컨텐츠는 ...패딩을 포함한 너비가 1000px으로 만들어 주세요</p>
+    </section>
+    
+</body>
+</html>

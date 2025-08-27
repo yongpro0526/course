@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 1. 동일한 선택자를 이용해서 디자인을 덮는법. */
+
+ /* .navbar-brand {
+    padding: 10px 20px;
+ } */
+
+ /* 2. 사용자 정의 클래스를 만들어서 추가. */
+
+.my-navbar {
+    padding: 10px 20px;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse{
+    background-color: #263238;
+    border-color: #263238;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #304047;
+    color: #fff;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+.btn {
+    border-radius: 0;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+/* 블로그 그리고 레이아웃 */
+.blog-style {
+    margin-bottom: 20px;
+}
+.blog-inner {
+    border: 1px solid #e3e3e3;
+    position: relative;
+}
+.blog-inner:hover > .blog-hover {
+    opacity: 1;
+}
+.blog-content {
+    padding: 10px
+}
+.blog-content > p {
+    font-weight: 700;
+    font-size: 13px;
+    height: 100px;
+}
+.blog-price {
+    overflow: hidden;
+}
+.blog-price > ul {
+    float: left;
+    overflow: hidden;
+}
+.blog-price > ul > li {
+    float: left;
+}
+.blog-price > ul > li > i {
+    font-size: 12px;
+    color: #FDCC11;
+}
+.blog-price > strong {
+    float: right;
+    font-size: 12px;
+}
+.blog-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    opacity: 0;
+}
+.blog-hover > a {
+    color: white;
+    font-weight: 900;
+}
+@media (min-width: 1200px) {
+    .blog-style.col-lg-2 {
+        width: 20%;
+    }
+}
+
+/* ==== 상품그리드 ==== */
+
+.blog-style-2 {
+    margin-bottom: 40px;
+}
+.blog-inner-2 {
+    overflow: hidden;
+}
+.blog-inner-2:hover > .blog-hover-2 {
+    opacity: 1;
+}
+.blog-content-2 {
+    overflow: hidden;
+    margin-top: 10px;
+    z-index: 0;
+}
+.blog-name-2 {
+    float: left;
+    margin: 5px;
+}
+.blog-name-2 > p {
+    margin: 0;
+}
+.blog-price-2 {
+    float: right;
+}
+.blog-hover-2 {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: ease-in-out;
+}
+.blog-hover-2 > ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.blog-hover-2 > ul > li {
+    float: left;
+    width: 20%;
+}
+.blog-hover-2 > ul > li > img {
+    width: 100%;
+    height: auto;
+}

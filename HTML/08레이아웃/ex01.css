@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.icon {
+    padding: 20px;
+}
+.icon > .left {
+    position: absolute;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-image: url(images/social.png);
+    background-repeat: no-repeat;
+}
+.icon > .left > li {
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+.icon > .left > li:nth-child(2) {
+    background-position: -32px 0;    
+}
+.icon > .left > li:nth-child(3) {
+    background-position: -64px 0;
+}
+.icon > .left > li:nth-child(4) {
+    background-position: -96px 0;
+}
+.icon > .right > li {
+    display: inline-block;
+}
+.icon > .right > li > a {
+    display: block;
+    text-decoration: none;
+    color: #555555;
+    font-size: 12px;
+}
+#header > h3 {
+    font-size: 32px;
+    text-align: center;
+}
+#header > nav {
+    text-align: center;
+}
+#header > nav > ul > li {
+    display: inline-block;
+}
+#header > nav > ul > li > a {
+    text-decoration: none;
+    color: #555555;
+    display: block;
+    margin-top: 20px;
+    padding: 30px;
+}
+#main {
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.article {
+    height: 500px;
+    border-top: 3px solid red;
+    background-image: url(images/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    margin-top: 190px;
+}
+.article > h3 {
+    margin-top: 150px;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-weight: normal;
+}
+.article > p {
+    font-size: 30px;
+}
+.section > p {
+    font-size: 14px;
+    border-bottom: 3px dashed #ddd;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.section > ul {
+    text-align: center;
+}
+.section > ul > li {
+    display: inline-block;
+    color: #dddddd;
+    font-weight: bold;
+    padding: 30px;
+}
+#footer {
+    border-top: 2px solid #ddd;
+}
+#footer > p {
+    padding: 10px;
+}
+.left {
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+.right {
+    float: right;
+    font-size: 14px;
+}

@@ -1,0 +1,59 @@
+* {margin: 0;}
+
+body {
+    background-color: #f4f4f4;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+#제목 {
+    color: white;
+    background-color: #4CAF50;
+    height: 150px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 40px;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#내용 {
+    border: white;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    padding: 40px 20px;
+    margin: 20px;
+}
+
+#내용 > h2 {
+    padding-bottom: 20px;
+}
+
+#푸터 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

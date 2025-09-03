@@ -1,0 +1,5 @@
+/* 다른 css파일을 참조하려면 import속성을 사용함 */
+@import url('commmon.css');
+
+/* css문법 */
+p {color: blue;}

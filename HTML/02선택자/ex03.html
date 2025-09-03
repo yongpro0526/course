@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* * {color: red;} */
+    b {color: red;}
+    ul, li{list-style: none;}
+    #a {color: aqua;}
+    .a {color: green;}
+
+    .b p {color: blueviolet} /* b 아래에 있는 모든 p들 */
+    .b > p {color: yellow;} /* b 하나 아래에 있는 모든 p들 */
+
+    </style>
+
+</head>
+<body>
+
+    <b>선택자</b>
+
+    <ul>
+        <li>다중선택자</li>
+        <li>다중선택자</li>
+    </ul>
+
+    <p id="a">아이디선택자</p>
+    <p class="a">클래스선택자</p>
+    <p class="a">클래스선택자</p>
+
+    <div class="b">
+        <p class="c">하위선택자</p>
+        <p>하위선택자</p>
+
+        <ul>
+            <li>
+                <p>자식선택자</p>
+                <p>자식선택자</p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

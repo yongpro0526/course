@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }        
+        
+        .일번 {
+            border: 1px solid #777;
+            width: 800px;
+            overflow: hidden;
+        }
+
+        .세칸배치 {
+            border: 1px solid #777;
+            float: left;
+            width: 33.3333%;
+            box-sizing: border-box;
+        }
+
+        .이번 {
+            border: 1px solid #777;
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .이번 > div {
+            border: 1px solid #777;
+            width: 45%;
+        }
+
+        .왼쪽 {
+            float: left;
+        }
+
+        .오른쪽 {
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h3>1. 너비는 800px에 3칸을 배치 해보세요.</h3>
+    <div class="일번">
+        <div class="세칸배치">3칸배치</div>
+        <div class="세칸배치">3칸배치</div>
+        <div class="세칸배치">3칸배치</div>
+    </div>
+
+    <h3 style="margin-top: 30px;">2. 너비 50%에 두 상자를 양쪽으로 각각 배치 해보세요.</h3>
+    <div class="이번">
+        <div class="왼쪽">너비: 45%</div>
+        <div class="오른쪽">너비: 45%</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* 기본 설정 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* 헤더 */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* 메인 컨테이너 (flexbox 사용) */
+.container {
+  display: flex;
+  justify-content: space-around; /* 가로 정렬 */
+  align-items: flex-start;       /* 세로 정렬 */
+  gap: 20px;
+  padding: 40px;
+}
+
+/* 카드 박스 */
+.card {
+  flex: 1;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 배경 이미지 예제 */
+.bg-image {
+  background-image: url('https://picsum.photos/400/300'); /* 랜덤 이미지 */
+  background-size: cover;   /* 꽉 채움 */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white; /* 글자가 잘 보이게 */
+}
+
+/* 배경 고정 예제 */
+.bg-fixed {
+  background-image: url('https://picsum.photos/400/400?grayscale');
+  background-size: cover;
+  background-attachment: fixed; /* 스크롤해도 고정 */
+  color: white;
+}
+
+/* 푸터 */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}

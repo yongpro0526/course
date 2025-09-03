@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 500px;
+            border: 1px solid #777;
+            background-image: url('img/back.jpeg');
+            background-repeat: no-repeat;
+            /* background-size: 100%; */
+            background-size: contain; /* 이미지 비율을 그대로 유지하면서 잘리지 않도록 해줌. 남은 공간은 비움. */
+            background-size: cover; /* 이미지 비율을 그대로 유지하면서 공간을 채우고 이미지가 잘리도록 만듬. */
+
+        }
+
+        .section {
+            border: 1px solid #777;
+            height: 700px;
+            background-image: url('img/back.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+
+    <section class="section">
+
+    </section>
+
+    <section style="height: 1000px;">
+
+    </section>
+    
+</body>
+</html>

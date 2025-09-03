@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box > div {
+            border: 1px solid #777;
+            display: inline; /* 박스를 인라인 속성으로 변경 (크기지정은 안됨) */
+        }
+
+        .list span, .list strong {
+            border: 1px solid #777;
+            display: block;
+        }
+
+        .nav > li {
+            list-style: none;
+            border: 1px solid #777;
+            display: inline-block; 
+            /* 
+                인라인 성질은 박스크기를 지정 할 수 없음. 
+                인라인-블럭 성질은 인라인처럼 가로배치를 하지만, 블럭처럼 크기를 지정할 수 있음.
+            */
+            width: 100px;
+            height: 100px;
+        }
+
+        .msg {
+            border: 1px solid #777;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+    </div>
+
+    <div class="list">
+        <span>박스</span>
+        <span>박스</span>
+        <strong>박스</strong>
+    </div>
+
+    <ul class="nav">
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+    </ul>
+
+    <div class="msg">
+        아이디 비밀번호를 확인하세요!
+    </div>
+    
+</body>
+</html>

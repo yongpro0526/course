@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>모든 인풋은 라벨 + id속성을 활용해보세요!</h3>
+    <form action="#">
+        <fieldset>
+            <legend>가입 양식</legend>
+            <fieldset>
+                <legend>개인 정보</legend>
+                <label for="전화번호">전화번호 (숫자만 11자리, 어케하지!? 찾아봐!)</label>
+                <br>
+                <input type="text" 
+                       id="전화번호" 
+                       pattern="\d{10,11}" 
+                       title="하이픈 없이 숫자 10~11자리를 입력하세요. 예) 01012345678" 
+                       placeholder="예) 01012345678"
+                       required>
+                <br>
+                <br>
+
+                <label for="생년월일">생년월일</label>
+                <br>
+                <input type="date" 
+                       id="생년월일" 
+                       required>
+                <br>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>이용 약관</legend>
+                <p>회원가입을 위해 서비스 이용 약관 및 개인정보 처리방침에 동의해주세요.
+                </p>
+                <input type="checkbox" 
+                       id="동의" 
+                       required>
+                <label for="동의">약관 및 개인정보 처리방침에 동의합니다.</label>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" 
+                   value="가입하기">
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

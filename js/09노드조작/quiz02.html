@@ -32,7 +32,7 @@
     </ul>
 
     <script>
-        let hello = document.getElementById("hello"); // nemeTitle
+        let hello = document.getElementById("hello");
         let name = document.getElementById("name");
         let nameBtn = document.getElementById("nameBtn");
 
@@ -47,21 +47,49 @@
         let list = document.getElementById("list")
 
         todoBtn.addEventListener("click", function() {
-            // let li = document.createElement("li");
-            // li.textContent = todo.value;
-            // list.appendChild(li);
-            // todo.value = "";
-            
-            // 선생님풀이
             let text = todo.value;
             todo.value = "";
             let li = document.createElement("li");
             li.innerHTML = text;
-            let button = document.createElement("button");
-            button.innerHTML = "X더블클릭";
-            button.className = "red-btn";
-            // li의 자식으로 button추가
-            li.appendChild(button);
+
+            let upBtn = document.createElement("button");
+            upBtn.innerHTML = "↑";
+            upBtn.className = "up-btn"
+            upBtn.addEventListener("click", function() {
+                let current = upBtn.parentElement;
+                let prev = current.previousElementSibling;
+                if(prev === null) {
+                    alert("첫번째 행입니다.");
+                    return false;
+                }
+                list.insertBefore(current, prev);
+            });
+
+            let downBtn = document.createElement("button");
+            downBtn.innerHTML = "↓";
+            downBtn.className = "down-btn"
+            downBtn.addEventListener("click", function() {
+                let current = downBtn.parentElement;
+                let next = current.nextElementSibling;
+                if(next === null) {
+                    alert("마지막 행입니다.");
+                    return false;
+                }
+                list.insertBefore(next, current);
+            });
+
+            let delBtn = document.createElement("button");
+            delBtn.innerHTML = "삭제";
+            delBtn.className = "del-btn"
+            delBtn.addEventListener("click", function() {
+                let li = delBtn.parentElement;
+                list.removeChild(li);
+            });
+
+            li.appendChild(upBtn);
+            li.appendChild(downBtn);
+            li.appendChild(delBtn);
+
             list.appendChild(li);
         });
 
